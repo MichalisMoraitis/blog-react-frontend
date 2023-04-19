@@ -1,0 +1,62 @@
+/* section.create{
+
+} */
+section.create h1{
+    text-align: center;
+}
+section.create form {
+    padding: 30px;
+    margin: auto;
+    width: min-content;
+    background-color: #fbfbfb;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px #e1ddff
+}
+.create form input, .create form textarea{
+    font-family:'Segoe UI', sans-serif;
+    font-size: large;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #e3e3e3;
+    outline: 0;
+    /* background-color: #f3f3f3; */
+    border-radius: 10px;
+    resize: vertical;
+    width: 500px;
+}
+.create form input:focus, .create form textarea:focus ,
+.create form input:hover, .create form textarea:hover{
+    outline: 3px solid #bde0fe;
+}
+.create form textarea{
+    height: 100px;
+}
+section.create form button{
+    margin: auto;
+    text-align: center;
+    border: 0;
+    padding: 10px 50px;
+    border-radius: 15px;
+    background-color: #e5e5e5;
+    border: 2px solid #bde0fe;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-size: large;
+}
+section.create  form button:hover{
+    background-color: #bde0fe;
+    color: #242424;
+}
+section.create form p.error{
+    color: red;
+    max-width: 380px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .create form input, .create form textarea{
+        width: 270px;
+    }
+}

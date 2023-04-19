@@ -1,0 +1,81 @@
+section.post-details{
+  max-width: 1200px;
+  margin: auto;
+}
+
+section.post-details article{
+    margin: 10px;
+    margin-top: 40px;
+    padding: 20px;
+    border: 1px solid lightgrey;
+    border-radius: 6px;   
+}
+
+section.post-details article h2{
+    color: #3081f3; 
+}
+
+section.post-details article img{
+    width: 100%;
+    max-height: 350px;
+    object-fit: contain;
+}
+
+section.post-details article button{
+    margin: 3px;
+    padding: 10px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+section.post-details article button.update:hover,
+section.post-details article button.like:hover,
+section.post-details article button.comment:hover{
+    outline: 3px solid #3081f3;
+    color: #3081f3;
+}
+
+section.post-details article button.delete:hover{
+    outline: 3px solid #e63946;
+    color: #e63946;
+}
+
+/* -------- comments ------- */
+
+section.post-details div.comments{
+    /* background-color: aliceblue; */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+section.post-details div.comments div.comment{
+    background-color: rgb(249, 249, 249);
+    border-radius: 7px;
+    padding-left: 10px;
+}
+
+/* ------ modal delete ------ */
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+.App {
+  /* width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Nunito", sans-serif; */
+}
+
+section.post-details .openModalBtn {
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 6px;
+  background-color: cornflowerblue;
+  color: white;
+  cursor: pointer;
+}
+
+

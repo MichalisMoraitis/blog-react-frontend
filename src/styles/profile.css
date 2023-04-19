@@ -1,0 +1,95 @@
+section.profile{
+  max-width: 1200px;
+  margin: auto;
+}
+
+section.profile h3{
+    margin-left: 10px;
+}
+
+section.profile p{
+    margin-left: 10px;
+    text-align: start!important;
+}
+
+section.profile img.profile-photo{
+    display: block;
+    height: 350px;
+    max-width: 100%;
+    object-fit:contain;
+    margin: auto;
+}
+
+section.profile a.profile-photo-link button{
+    margin: 10px;
+    padding: 10px;
+    font-size: large;
+    background-color: #2866bb;
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}  
+
+section.profile a.profile-photo-link button:hover{
+    opacity: 0.9;
+}
+
+
+/* ---------- posts ---------- */
+
+section.profile .posts{
+    /* background-color: bisque; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 10px;
+}
+
+section.profile .post{
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    background-color: #fdfdfd;
+    padding: 10px;
+}
+
+section.profile p{
+    text-align: start;
+}
+
+section.profile .posts a{
+    text-decoration: none;
+    color: #333;
+}
+section.profile .post h2{
+    margin: 5px 0;
+    color: #3081f3;
+}
+
+section.profile p{
+    text-align: start;
+}
+
+section.profile p{
+    text-align: center;
+}
+
+section.profile p.error{
+    text-align: center;
+    margin: 5px 0;
+    color: red;
+}
+section.profile h1{
+    text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+    section.profile .posts{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (max-width: 450px) {
+    section.profile .posts{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

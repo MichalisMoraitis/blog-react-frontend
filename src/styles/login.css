@@ -1,0 +1,50 @@
+
+section.login h1{
+    text-align: center;
+}
+section.login form{
+    padding: 30px;
+    border-radius: 10px;
+    margin: auto;
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 5px 1px #e1ddff
+}
+
+section.login form p.error{
+    color: red;
+}
+section.login form label input{
+    font-size: large;
+    width: 300px;
+    height: 40px;
+    border: 1px solid #e5e5e5;
+    outline: 0;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding-left:10px;
+}
+section.login form input:hover, section.login form input:focus{
+    outline: 4px solid #bde0fe;
+}
+section.login form button{
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+    border: 1px solid lightgray;
+    cursor: pointer;
+    border-radius: 5px;
+}
+section.login form button:hover{
+    background-color: #eaeaea;
+    outline: 3px solid #bde0fe;
+}
+section.login form label p{
+    width: 300px;
+    margin: 0;
+}

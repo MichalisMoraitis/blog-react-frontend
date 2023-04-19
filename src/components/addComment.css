@@ -1,0 +1,40 @@
+div.new-comment{
+    /* background-color: aqua; */
+}
+
+div.new-comment form div.comment-input{
+    width: 100%;
+    max-width: 600px;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.new-comment form div.comment-input input{
+    /* width: 100%; */
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+    height: 40px;
+    padding-left: 8px;
+    font-size: medium;
+}
+div.new-comment form div.comment-input button{
+    width: 90px;
+    /* height: 30px; */
+    padding: 10px;
+    align-self: flex-end;
+    position: relative;
+    bottom:43px;
+    background-color: inherit;
+    /* z-index: -1; */
+    /* z-index: 1; */
+}
+
+div.new-comment form p.error{
+    color: red;
+    position: relative;
+    top: -20px;
+}
+

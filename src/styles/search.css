@@ -1,0 +1,120 @@
+section.search{
+    
+  max-width: 1200px;
+  margin: auto;
+}
+
+section.search input{
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: large;
+    border: 1px solid #e5e5e5;
+    outline: 0;
+    border-radius: 5px;
+    padding-left:10px;
+}
+
+section.search input:hover, section.search input:focus{
+    outline: 3px solid #bde0fe;
+}
+
+section.search .all-data{
+    /* border: 1px solid blue; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 10px;
+    gap: 10px;
+}
+
+section.search .all-data h1{
+    position: sticky;
+    top: 0;
+    background-color: #f2f2f2;
+    margin-top: 0;
+    margin-top: inherit;
+}
+
+section.search p.error{
+    text-align: center;
+    color: red;
+}
+
+/* posts */
+
+section.search .all-data .posts {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-height: 70vh;
+    overflow: auto;
+    /* margin: 5px; */
+}
+
+section.search .all-data .posts .post{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    min-height: 100px;
+}
+
+section.search .all-data .posts .post a{
+    text-decoration: none;
+    color: #333;
+    gap: 5px;
+}
+
+section.search .all-data .posts .post h2{
+    margin: 0;
+    color:#2b2d42;
+}
+
+section.search .all-data .posts .post p{
+    margin: 0;
+    color: #8d99ae;
+    padding-top: 30px;
+}
+/* users */
+
+section.search .all-data .users{
+    /* background-color: lightgrey; */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    /* margin: 5px; */
+    max-height: 70vh;
+    overflow: auto;
+}
+
+section.search .all-data .users .user a{
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    height: 100px;
+    gap: 5px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+section.search .all-data .users .user img{
+    height: calc(100% - 20px);
+    width: 80px;
+    object-fit:cover;
+    margin: 10px;
+    border-radius: 200px;
+}
+
+section.search .all-data .users .user h2{
+    font-size: x-large;
+    color: #2b2d42;
+}
+
+@media only screen and (max-width: 700px) {
+    section.search .all-data{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, min-content);
+    }
+}

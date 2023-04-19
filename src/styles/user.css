@@ -1,0 +1,95 @@
+    section.user{
+        max-width: 1200px;
+        margin: auto;
+    }
+  
+    section.user h3{
+        margin-left: 10px;
+    }
+  
+    section.user p{
+        margin-left: 10px;
+        text-align: start!important;
+    }
+  
+    section.user img.user-photo{
+        display: block;
+        height: 350px;
+        max-width: 100%;
+        object-fit:contain;
+        margin: auto;
+    } 
+  
+    section.user button.friend-request-button{
+        /* height: 40px; */
+        font-size: medium;
+        margin: 10px;
+        border: 1px solid rgb(228, 228, 228);
+        background-color: #3081f3;
+        color: #fff;
+        padding: 15px;
+        cursor: pointer;
+        border-radius: 5px;
+    } 
+
+    section.user button.friend-request-button:hover{
+        opacity: 0.9;
+    }
+  
+  /* ---------- posts ---------- */
+  
+  section.user .posts{
+      /* background-color: bisque; */
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin: 10px;
+  }
+  
+  section.user .post{
+      border: 1px solid lightgrey;
+      border-radius: 4px;
+      background-color: #fdfdfd;
+      padding: 10px;
+  }
+  
+  section.user p{
+      text-align: start;
+  }
+  
+  section.user .posts a{
+      text-decoration: none;
+      color: #333;
+  }
+  section.user .post h2{
+      margin: 5px 0;
+      color: #3081f3;
+  }
+  
+  section.user p{
+      text-align: start;
+  }
+  
+  section.user p{
+      text-align: center;
+  }
+  
+  section.user p.error{
+      text-align: center;
+      margin: 5px 0;
+      color: red;
+  }
+  section.user h1{
+      text-align: center;
+  }
+  
+  @media only screen and (max-width: 900px) {
+      section.user .posts{
+          grid-template-columns: repeat(2, 1fr);
+      }
+  }
+  @media only screen and (max-width: 450px) {
+      section.user .posts{
+          grid-template-columns: repeat(1, 1fr);
+      }
+  }
