@@ -49,11 +49,15 @@ function Search() {
 
     return (
         <section className="search">
-        
-            <input type="text" 
-                value={search} placeholder="Αναζήτηση"
-                onChange={(e)=>{setSearch(e.target.value)}}
-            /> 
+            <label>
+                <input type="text" 
+                    value={search} placeholder="Αναζήτηση"
+                    onChange={(e)=>{setSearch(e.target.value)}}
+                /> 
+                <button onClick={() => setSearch("")}>
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+            </label>
 
             {error && <p className='error'>{error}</p>}
 

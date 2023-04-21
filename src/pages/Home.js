@@ -71,6 +71,7 @@ const Home = () => {
               {page}
             </button>
           ))}
+          {/* <button onClick={()=>setCurrentPage(currentPage+1)}>new data</button> */}
           <button onClick={() => {currentPage !== numberOfPages && setCurrentPage(currentPage+1); }}>
             <span className="material-symbols-outlined">arrow_forward_ios</span>
           </button>
