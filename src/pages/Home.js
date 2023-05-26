@@ -99,14 +99,14 @@ const Home = () => {
         <div className="socials">
           <h1>Social Media</h1>
           <div className="row1">
-            <i className="fab fa-facebook"></i>
-            <i className="fab fa-instagram"></i>
-            <i className="fab fa-youtube"></i>
+            <i className="fa fa-facebook"></i>
+            <i className="fa fa-instagram"></i>
+            <i className="fa fa-youtube"></i>
           </div>
           <div className="row2">
-            <i className="fab fa-tiktok"></i>
-            <i className="fab fa-linkedin"></i>
-            <i className="fab fa-github"></i>
+            <i className="fa fa-tiktok"></i>
+            <i className="fa fa-linkedin"></i>
+            <i className="fa fa-github"></i>
           </div>
         </div>
       </div>
